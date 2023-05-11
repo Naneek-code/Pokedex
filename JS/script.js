@@ -10,7 +10,7 @@ const input = document.querySelector('.input_search');
 const btnProximo = document.querySelector('.btn_proximo');
 const btnAnterior = document.querySelector('.btn_anterior');
 
-let searchPokemon = 1;
+let searchPokemon = Math.floor(Math.random() * 1010) + 1;
 
 const fetchPokemon = async (pokemon) => {
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
