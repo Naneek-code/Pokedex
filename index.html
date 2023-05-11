@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <link rel="icon" href="./favicon/favicon.ico">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <script defer src="./JS/script.js"></script>
+</head>
+
+<body>
+
+    <main>
+
+
+        <span class="pokedex_tittle">
+            <span class="pokemon_id"></span> - <span class="pokemon_name"></span>
+        </span>
+
+        <img class="pokemon_image" src="#" alt="">
+        <span class="image_tag">OFICIAL ART</span>
+        <img class="pokemon_sprite" src="#" alt="">
+        <span class="sprite_tag">SPRITE</span>
+
+        <span class="delimitador">
+            <span class="pokedex_footer">
+                <span class="pokedex_footer2">
+                    <img class="pokemon_icon" src="#">
+                </span>
+            </span>
+        </span>
+
+        <div class="btns_dex">
+            <button class="btn_anterior" >Anterior</button>
+            <button class="btn_proximo">Proximo</button>
+        </div>
+        <form class="form">
+            <input type="search" placeholder="Insira o Nome ou ID do Pokémon" class="input_search" required>
+        </form>
+
+        <span class="pokedex_erro"> <SPAN class="pokedex_erro_msg"> OPÁ NÃO ACHAMOS DADOS PARA ESSE POKÉMON. :C
+                <br><BR><BR> VERIFIQUE O NOME OU ID DO POKÉMON
+                DIGITADO.</SPAN>
+        </span>
+        <span class="pokedex_loading"> <SPAN class="pokedex_loading_msg"> Aguarde enquanto trazemos as informações do
+                Pokémon...</SPAN>
+            <img src="./images/Youtube_loading_symbol_1_(wobbly).gif" style="height: 25%; mix-blend-mode: lighten; position: absolute;
+        bottom: 18%; left: 40%;" alt="" srcset="">
+        </span>
+
+        <img src="./images/pokedex.png" alt="Pokédex" class="pokedex">
+    </main>
+
+</body>
+
+</html>
