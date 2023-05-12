@@ -9,6 +9,11 @@ const form = document.querySelector('.form');
 const input = document.querySelector('.input_search');
 const btnProximo = document.querySelector('.btn_proximo');
 const btnAnterior = document.querySelector('.btn_anterior');
+const preloader = document.querySelector('.pg_loading')
+
+window.addEventListener('load', function () {
+    preloader.classList.add('hide-pg_loading');
+})
 
 let searchPokemon = Math.floor(Math.random() * 1010) + 1;
 
@@ -48,8 +53,8 @@ form.addEventListener('submit', (event) => {
 
 btnProximo.addEventListener('click', () => {
     if (searchPokemon < 1010) {
-    searchPokemon += 1;
-    renderPokemon(searchPokemon);
+        searchPokemon += 1;
+        renderPokemon(searchPokemon);
     } else {
         searchPokemon = 1;
         renderPokemon(searchPokemon);
@@ -59,10 +64,10 @@ btnProximo.addEventListener('click', () => {
 btnAnterior.addEventListener('click', () => {
     if (searchPokemon > 1) {
         searchPokemon -= 1;
-        renderPokemon(searchPokemon); 
+        renderPokemon(searchPokemon);
     } else {
         searchPokemon = 1010;
-        renderPokemon(searchPokemon); 
+        renderPokemon(searchPokemon);
     }
 });
 

@@ -205,3 +205,28 @@ main {
     left: 12%;
     font-size: clamp(0.7em, 4vw, 1em);
 }
+
+.pg_loading {
+    overflow: hidden;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 9;
+}
+
+.hide-pg_loading {
+    z-index: -999;
+    visibility: hidden;
+}
+
+.pg_loading img {
+    mix-blend-mode: difference;
+    height: 5%;
+}
+
+.pg_loading h1 {
+    text-transform: uppercase;
+    margin-top: 40vh;
+    margin-bottom: 20px;
+}
