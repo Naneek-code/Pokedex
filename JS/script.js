@@ -76,16 +76,22 @@ const renderPokemon = async (pokemon) => {
                     break;
                 case 'electric':
                     pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/4/4a/ElectricIC_Big.png\">";
+                    break;
                 case 'psychic':
                     pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/6/60/PsychicIC_Big.png\">";
+                    break;
                 case 'ice':
                     pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/6/6f/IceIC_Big.png\">";
+                    break;
                 case 'dragon':
                     pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/4/48/DragonIC_Big.png\">";
+                    break;
                 case 'dark':
                     pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/5/56/DarkIC_Big.png\">";
+                    break;
                 case 'fairy':
                     pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/b/ba/FairyIC_XY.png\" height=\"17px\" >";
+                    break;
             }
         });
 
