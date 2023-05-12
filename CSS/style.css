@@ -117,6 +117,14 @@ main {
     width: 17%;
 }
 
+.pokemon_type {
+    height: 75%;
+    top: 14%;
+    position: absolute;
+    left: 17.9%;
+    float: left;
+}
+
 .pokemon_icon {
     position: absolute;
     left: -45%;

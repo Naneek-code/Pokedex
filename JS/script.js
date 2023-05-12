@@ -10,6 +10,8 @@ const input = document.querySelector('.input_search');
 const btnProximo = document.querySelector('.btn_proximo');
 const btnAnterior = document.querySelector('.btn_anterior');
 const preloader = document.querySelector('.pg_loading')
+const pokemonType = document.querySelector('.pokemon_type')
+
 
 window.addEventListener('load', function () {
     preloader.classList.add('hide-pg_loading');
@@ -27,9 +29,66 @@ const fetchPokemon = async (pokemon) => {
 
 const renderPokemon = async (pokemon) => {
     pokedexLoading.style.display = 'block'
+    pokemonType.innerHTML = "";
     const data = await fetchPokemon(pokemon);
     pokedexLoading.style.display = 'none'
+
     if (data) {
+
+        data.types.forEach((types) => {
+            let type = types.type.name;
+            switch (type) {
+                case 'normal':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/3/39/NormalIC_Big.png\">";
+                    break;
+                case 'fighting':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/6/67/FightingIC_Big.png\">";
+                    break;
+                case 'flying':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/c/cb/FlyingIC_Big.png\">";
+                    break;
+                case 'poison':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/3/3d/PoisonIC_Big.png\">";
+                    break;
+                case 'ground':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/8/8f/GroundIC_Big.png\">";
+                    break;
+                case 'rock':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/c/ce/RockIC_Big.png\">";
+                    break;
+                case 'bug':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/c/c8/BugIC_Big.png\">";
+                    break;
+                case 'ghost':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/7/73/GhostIC_Big.png\">";
+                    break;
+                case 'steel':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/d/d4/SteelIC_Big.png\">";
+                    break;
+                case 'fire':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/2/26/FireIC_Big.png\">";
+                    break;
+                case 'water':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/5/56/WaterIC_Big.png\">";
+                    break;
+                case 'grass':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/7/74/GrassIC_Big.png\">";
+                    break;
+                case 'electric':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/4/4a/ElectricIC_Big.png\">";
+                case 'psychic':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/6/60/PsychicIC_Big.png\">";
+                case 'ice':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/6/6f/IceIC_Big.png\">";
+                case 'dragon':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/4/48/DragonIC_Big.png\">";
+                case 'dark':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/5/56/DarkIC_Big.png\">";
+                case 'fairy':
+                    pokemonType.innerHTML += "<img src=\"https://archives.bulbagarden.net/media/upload/b/ba/FairyIC_XY.png\" height=\"17px\" >";
+            }
+        });
+
         pokedexErro.style.display = 'none'
         pokemonName.innerHTML = data.name.toUpperCase();
         pokemonId.innerHTML = data.id;
