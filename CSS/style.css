@@ -1,239 +1,246 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-    font-family: 'Oxanium', cursive;
-    font-size: clamp(0.7em, 3vw, 1em);
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Oxanium", cursive;
+  font-size: clamp(0.7em, 3vw, 1em);
 }
 
 body {
-    text-align: center;
-    background-color: rgba(21, 54, 117, 0.342);
-    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-    background-size: 50px 50px;
-    min-height: 100vh;
+  text-align: center;
+  background-color: rgba(21, 54, 117, 0.342);
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 50%,
+    transparent
+  );
+  background-size: 50px 50px;
+  min-height: 100vh;
 }
 
 main {
-    display: inline-block;
-    margin-top: 15vh;
-    position: relative;
+  display: inline-block;
+  margin-top: 15vh;
+  position: relative;
 }
 
 .pokedex {
-    width: 100%;
-    max-width: 855px;
+  width: 100%;
+  max-width: 855px;
 }
 
 .pokedex_tittle {
-    position: absolute;
-    font-weight: 600;
-    left: 31.85%;
-    top: 7%;
-    padding: 2px;
-    min-width: 34.6%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    background: rgb(0, 195, 255);
-    color: white;
+  position: absolute;
+  font-weight: 600;
+  left: 31.85%;
+  top: 7%;
+  padding: 2px;
+  min-width: 34.6%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: rgb(0, 195, 255);
+  color: white;
 }
 
 .pokemon_image {
-    position: absolute;
-    right: 34%;
-    top: 14%;
-    height: 20%;
-    border-radius: 10%;
-    background-color: rgba(255, 255, 255, 0.541);
-    border-color: rgb(167, 167, 167);
-    padding: 2px;
+  position: absolute;
+  right: 34%;
+  top: 14%;
+  height: 20%;
+  border-radius: 10%;
+  background-color: rgba(255, 255, 255, 0.541);
+  border-color: rgb(167, 167, 167);
+  padding: 2px;
 }
 
 .pokemon_sprite {
-    position: absolute;
-    height: 12.5%;
-    image-rendering: pixelated;
-    left: 33%;
-    top: 14%;
-    padding: 2.5px;
-    transform: scale(-1, 1);
-    background-color: rgba(0, 195, 255, 0.342);
-    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-    background-size: 5px 5px;
-    border-radius: 10%;
-    border-style: groove;
-    border-color: rgb(255, 255, 255);
+  position: absolute;
+  height: 12.5%;
+  image-rendering: pixelated;
+  left: 33%;
+  top: 14%;
+  padding: 2.5px;
+  transform: scale(-1, 1);
+  background-color: rgba(0, 195, 255, 0.342);
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 50%,
+    transparent
+  );
+  background-size: 5px 5px;
+  border-radius: 10%;
+  border-style: groove;
+  border-color: rgb(255, 255, 255);
 }
 
 .image_tag {
-    position: absolute;
-    top: 16%;
-    right: 49.4%;
-    color: white;
-    writing-mode: vertical-rl;
-    font-size: clamp(0.5em, 2vw, 0.7em);
+  position: absolute;
+  top: 16%;
+  right: 49.4%;
+  color: white;
+  writing-mode: vertical-rl;
+  font-size: clamp(0.5em, 2vw, 0.7em);
 }
 
 .sprite_tag {
-    position: absolute;
-    top: 29.3%;
-    left: 34%;
-    color: rgb(255, 255, 255);
-    font-size: clamp(0.5em, 2vw, 0.7em);
+  position: absolute;
+  top: 29.3%;
+  left: 34%;
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.5em, 2vw, 0.7em);
 }
 
 .delimitador {
-    position: absolute;
-    width: 35%;
-    left: 32%;
-    bottom: 58.6%;
-    height: 10%;
-    overflow: hidden;
+  position: absolute;
+  width: 35%;
+  left: 32%;
+  bottom: 58.6%;
+  height: 10%;
+  overflow: hidden;
 }
 
 .pokedex_footer {
-    background: rgb(0, 195, 255);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    width: 100%;
-    height: 36%;
+  background: rgb(0, 195, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 100%;
+  height: 36%;
 }
 
 .pokedex_footer2 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: rgb(255, 255, 255);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 13px;
-    height: 174%;
-    width: 17%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 13px;
+  height: 174%;
+  width: 17%;
 }
 
 .pokemon_type {
-    height: 75%;
-    top: 14%;
-    position: absolute;
-    left: 17.9%;
-    float: left;
+  height: 75%;
+  top: 14%;
+  position: absolute;
+  left: 17.9%;
+  float: left;
 }
 
 .pokemon_icon {
-    position: absolute;
-    left: -45%;
-    bottom: 0;
-    transform: scale(-1, 1);
-    height: 200%;
+  position: absolute;
+  left: -45%;
+  bottom: 0;
+  transform: scale(-1, 1);
+  height: 200%;
 }
 
 .form {
-    position: absolute;
-    width: 34.9%;
-    bottom: 6.9%;
-    left: 31.8%;
-    border-radius: 5px;
+  position: absolute;
+  width: 34.9%;
+  bottom: 6.9%;
+  left: 31.8%;
+  border-radius: 5px;
 }
 
 .input_search {
-    text-align: center;
-    width: 100%;
-    border-radius: 5px;
-    border: 0.1px solid rgba(0, 0, 0, 0.301);
-    padding: 3px;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  border: 0.1px solid rgba(0, 0, 0, 0.301);
+  padding: 3px;
 }
 
 .btns_dex {
-    width: 34.8%;
-    position: absolute;
-    left: 31.9%;
-    bottom: 11.4%;
+  width: 34.8%;
+  position: absolute;
+  left: 31.9%;
+  bottom: 11.4%;
 }
 
 .btn_anterior {
-    padding: 2%;
-    width: 50%;
-    float: left;
+  padding: 2%;
+  width: 50%;
+  float: left;
 }
 
 .btn_proximo {
-    padding: 2%;
-    float: right;
-    width: 50%;
+  padding: 2%;
+  float: right;
+  width: 50%;
 }
 
 .pokedex_erro {
-    display: none;
-    overflow: hidden;
-    color: white;
-    background-color: black;
-    position: absolute;
-    top: 7%;
-    left: 31.9%;
-    border-radius: 5px;
-    height: 34.4%;
-    width: 35.1%;
+  display: none;
+  overflow: hidden;
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: 7%;
+  left: 31.9%;
+  border-radius: 5px;
+  height: 34.4%;
+  width: 35.1%;
 }
 
 .pokedex_erro_msg {
-    font-weight: 700;
-    display: block;
-    width: 75%;
-    position: relative;
-    top: 15%;
-    left: 12%;
-    font-size: clamp(0.7em, 4vw, 1em);
+  font-weight: 700;
+  display: block;
+  width: 75%;
+  position: relative;
+  top: 15%;
+  left: 12%;
+  font-size: clamp(0.7em, 4vw, 1em);
 }
 
 .pokedex_loading {
-    overflow: hidden;
-    color: white;
-    background-color: rgb(11, 112, 194);
-    position: absolute;
-    top: 7%;
-    left: 31.9%;
-    border-radius: 5px;
-    height: 34.4%;
-    width: 35.1%;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(11, 112, 194);
+  position: absolute;
+  top: 7%;
+  left: 31.9%;
+  border-radius: 5px;
+  height: 34.4%;
+  width: 35.1%;
 }
 
 .pokedex_loading_msg {
-    font-weight: 700;
-    display: block;
-    width: 75%;
-    position: relative;
-    top: 17%;
-    left: 12%;
-    font-size: clamp(0.7em, 4vw, 1em);
+  font-weight: 700;
+  display: block;
+  width: 75%;
+  position: relative;
+  top: 17%;
+  left: 12%;
+  font-size: clamp(0.7em, 4vw, 1em);
 }
 
 .pg_loading {
-    overflow: hidden;
-    background: white;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 9;
+  overflow: hidden;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 9;
 }
 
 .hide-pg_loading {
-    z-index: -999;
-    visibility: hidden;
+  z-index: -999;
+  visibility: hidden;
 }
 
 .pg_loading img {
-    mix-blend-mode: difference;
-    height: 5%;
+  mix-blend-mode: difference;
+  height: 5%;
 }
 
 .pg_loading h1 {
-    text-transform: uppercase;
-    margin-top: 40vh;
-    margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-top: 40vh;
+  margin-bottom: 20px;
 }
